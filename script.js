@@ -1,11 +1,8 @@
 function filter(shoe){
     const art =document.querySelectorAll('article');
     art.forEach(arti=> {
-        if(shoe==='all' || arti.classList.contains(shoe)){
-            arti.style.display='block'
-        }else{
-            arti.style.display='none'
-        }
+        const show = shoe === 'all' || arti.classList.contains(shoe);
+        arti.classList.toggle('hidden', !show);
     })
 };
 
