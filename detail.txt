@@ -1,0 +1,2 @@
+product card gallery
+grid layout image handling

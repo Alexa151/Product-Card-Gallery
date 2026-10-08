@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+    color: white;
+}
+.top{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+h1{
+    flex: 1; /*find a way to remove the flex so it doesn't stretch all the way*/
+    border-left: 3px solid gray;
+    padding-left: 10px;
+    margin-left: 3%;
+}
+h1:hover{
+    border-left-color:rgb(69, 68, 68) ;
+}
+.theme{
+    flex-shrink: 0;
+    justify-content: end;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.sitedesc{
+    margin-left: 3%;
+}
+nav{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.nav{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.nav:hover{
+    color: gray;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    max-width: 250px;
+    max-height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: space-evenly;
+    row-gap: 30px;
+}
+
+article{
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgb(26, 25, 25);
+}
+article:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px gray;
+    transform: translateY(-8px);
+}
+.details{
+    margin-left: 3%;
+}
+.category{
+    color: gray;
+}
+.cta{
+    border: none;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+    margin-bottom: 2%;
+    margin-left:80% ;
+}
+
+.light{
+    background-color: rgb(236, 234, 234);
+    color: black;
+}
+.light .nav{
+    border-bottom: 1px solid black;
+    color: black;
+}
+.light .nav:hover{
+    color: rgb(139, 136, 136);
+}
+.light article{
+    background-color: rgb(215, 214, 214);
+}
+.light article:hover{
+    box-shadow: 0 8px 20px rgb(48, 48, 48);
+}
+.light .cta{
+    color: black;
+}
+.light .theme{
+     border-bottom: 1px solid black;
+    color: black;
+}
